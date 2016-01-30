@@ -1,0 +1,25 @@
+<?php
+$employees = array ("jobs" => array ("a" => "developer",
+                                     "b" => "editor",
+                                     "C" => "writer"
+                                    ),
+                                    "rating" => array ( 1,
+                                    2,
+                                    3,
+                                    4,
+                                    5,
+                                    ),
+                                    "position" => array ( "jr",
+                                    "midlevel",
+                                    "lead",
+                                    "senior",
+                                =>  "seniorlead",
+                                    )
+                                    );
+ //some examples to address values
+ echo $employees["position"][5]; // prints "seniorlead"
+ echo $employees["jobs"]["a"]; //prints "developer"
+ unset ($employees["position"][0]; // remove "jr"
+ //create a new multi-dimentional array
+ $personell["developer"]["jr"] = "new";
+ ?>
